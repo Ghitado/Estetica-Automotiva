@@ -22,7 +22,9 @@
   --section-padding: 60px;
 
   --shadow: 0px 0px 100px 0px hsl(216, 9%, 90%);
+  --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
+  --grey: #818a91;
   --bg-color-whatsapp: #61CE70;
   --bg-color: hsl(1, 91%, 37%);
   --bg-color-section: #F0F0F0;
@@ -61,7 +63,7 @@ body {
   background-color: var(--white);
   color: var(--bg-color);
   max-width: max-content;
-  font-weight: var(--fw-600);
+  font-weight: var(--fw-500);
   text-transform: uppercase;
   text-decoration: none;
   display: flex;
@@ -91,11 +93,14 @@ h3 {
   font-weight: var(--fw-600);
 }
 
+h4 {
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+}
+
 
 
 /*-----HEADER/NAVBAR-----*/
-
-.header .btn { display: none; }
 
 .header {
   top: 0;
@@ -318,6 +323,7 @@ h3 {
   grid-template-rows: 5;
   padding: 65px 0;
   width: 100%;
+  gap: var(--fs-8);
 }
 
 .galery-item {
@@ -328,3 +334,117 @@ h3 {
 }
 
 .galery-item img { width: 100%; }
+
+.galery a {
+  background-color: var(--bg-color);
+  color: var(--white);
+  margin-top: 13px;
+}
+
+
+
+/*-----CONTACT-----*/
+
+.contact { 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+}
+
+.contact h2 { 
+  width: 100%; 
+}
+.contact h3 {
+  padding-top: 5px;
+  font-size: var(--fs-3);
+  font-weight: var(--fw-800);
+  width: 100%;
+}
+
+.contact h4 { 
+  padding-top: 13px; 
+  width: 100%;
+}
+
+.contact p {
+  padding-top: 11px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  width: 100%;
+}
+
+.contact-show {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.contact-inputs {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 8px;
+  width: 100%;
+}
+
+.contact-inputs input,
+.contact-inputs textarea {
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  background-color: var(--bg-color-section);
+  color: var(--black);
+  border: 1px solid var(--grey);
+  border-radius: 3px;
+  padding: 1rem 2.3rem;
+  width: 100%;
+}
+
+.contact-inputs textarea { 
+  font-family: var(--ff-mulish);
+  padding: 1.5rem 2.3rem;
+  resize: vertical; 
+  min-height: var(--fs);
+}
+
+.contact-inputs a {
+  background-color: var(--bg-color);
+  color: var(--white);
+  font-size: var(--fs-6);
+  text-transform: none;
+  border-radius: 3px;
+  padding: 8px 18px;
+  max-height: var(--fs-1);
+}
+
+.contact-means {
+  display: grid;
+  grid-template-rows: 5;
+  gap: var(--fs-7);
+  padding: 30px;
+  width: 100%;
+}
+
+.line-top {
+  border-top: 1px solid var(--bg-color);
+}
+
+.contact-means-item span { display: flex; }
+.contact-means-item {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  text-align: start;
+  width: 100%;
+}
+
+.contact-means-item a { 
+  text-decoration: none; 
+  text-transform: none;
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+  color: var(--black);
+}
+
+.contact-means-item i { align-self: center;}
