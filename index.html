@@ -19,7 +19,7 @@
                 <img src="./assets/images/logo.png" alt="autofix home">
             </a>
 
-            <nav class="navbar" data-navbar>
+            <nav id="navbar-desktop" class="navbar-desktop">
                 <ul class="navbar-list">
                     <li>
                     <a href="#home" class="navbar-link">Home</a>
@@ -41,6 +41,23 @@
                     <a href="#contact" class="navbar-link">Contato</a>
                     </li>
                 </ul>
+            </nav>
+
+            <nav id="navbar-mobile" class="navbar-mobile">
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                        <li><a href="#service" onclick="toggleMenu()">Serviços</a></li>
+                        <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+                        <li><a href="#galery" onclick="toggleMenu()">Galeria</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -73,53 +90,53 @@
             
             <div class="services-show">
                 <div class="services-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <i href="./assets/pages/services.html" class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>
                     <p>Polimento Técnico</p>
                 </div>
                 <div class="services-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>
                     <p>Vitrificação</p>
                 </div>
                 <div class="services-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                   
                     <p>Lavagem técnica</p>
                 </div>
                 <div class="services-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                   
                     <p>Higienização interna</p>
                 </div>
 
                 <div class="services-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                   
                     <p>Restauração de Faróis</p>
                 </div>
                 <div class="services-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                   
                     <p>Limpeza técnica de Motor</p>
                 </div>
                 <div class="services-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                   
                     <p>Cristalização de Vidros</p>
                 </div>
                 <div class="services-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                   
                     <p>Impermeabilização dos Bancos</p>
                 </div>
 
                 <div class="services-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                   
                     <p>Hidratação dos Bancos de Couro</p>
                 </div>
                 <div class="services-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                   
                     <p>Higienização do Ar condicionado</p>
                 </div>
                 <div class="services-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                   
                     <p>Micro Pintura e Pequenos Reparos</p>
                 </div>
                 <div class="services-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                   
                     <p>Delivery</p>
                 </div>
             </div>
@@ -133,7 +150,9 @@
 
             <div class="service-features">
                 <div class="service-features-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <div class="service-features-badge">
+                        <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i> 
+                    </div>
                     <div class="service-features-text">
                         <h3>Atendimento Humanizado</h3>
                         <p>Estamos aqui para te ENTENDER ANTES DE ATENDER, queremos ir 
@@ -143,18 +162,22 @@
                 </div>
                 
                 <div class="service-features-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <div class="service-features-badge">
+                        <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                   
+                    </div>
                     <div class="service-features-text">
                         <h3>Profissionais Capacitados</h3>
                         <p>Time de profissionais com conhecimento técnico, experiência 
                         de mercado, comprometidos, e em constante aprimoramento e 
                         desenvolvimento para sempre poder oferecer aos nossos clientes 
-                        uma experiência e resultados diferenciados.</p>
+                        algo diferenciado.</p>
                     </div>    
                 </div>
 
                 <div class="service-features-item">
-                    <i class="fa-brands fa-product-hunt"></i>
+                    <div class="service-features-badge">
+                        <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                   
+                    </div>
                     <div class="service-features-text">
                         <h3>Garantia</h3>
                         <p>Para tranquilidade dos nossos clientes, fornecemos garantia em 
@@ -243,8 +266,7 @@
 
                 <div class="contact-means">
                     <div class="contact-means-item">
-                        <i class="fa-brands fa-product-hunt"></i>
-                        <div>
+                        <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                       <div>
                             <a href="#contact">Telefone</a>
                             <span>(11) 91234-5678</span>
                         </div>
@@ -252,8 +274,7 @@
                     
                     <span class="line-top"></span>
                     <div class="contact-means-item">
-                        <i class="fa-brands fa-product-hunt"></i>
-                        <div>
+                        <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                       <div>
                             <a href="#contact">WhatsApp</a>
                             <span>(11) 91234-5678</span>
                         </div>
@@ -261,8 +282,7 @@
                     
                     <span class="line-top"></span>
                     <div class="contact-means-item">
-                        <i class="fa-brands fa-product-hunt"></i>
-                        <div>
+                        <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                       <div>
                             <a href="#contact">E-mail</a>
                             <span>contato@garagem5-5.com.br</span>
                         </div>
@@ -270,8 +290,7 @@
 
                     <span class="line-top"></span>
                     <div class="contact-means-item">
-                        <i class="fa-brands fa-product-hunt"></i>
-                        <div>
+                        <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                       <div>
                             <a href="#contact">Funcionamento</a>
                             <span>De Seg. a Sex. de 8h às 17h30</span>
                             <span>Sábados de 9h às 14h</span>
@@ -280,8 +299,7 @@
                     
                     <span class="line-top"></span>
                     <div class="contact-means-item">
-                        <i class="fa-brands fa-product-hunt"></i>
-                        <div>
+                        <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                       <div>
                             <a href="#contact">Endereço</a>
                             <span>N/A, São Paulo/SP</span>
                         </div>
@@ -294,7 +312,9 @@
     <footer class="footer">
         <div class="footer-top">
             <a href="#home">
-                <img class="logo" src="./assets/images/logo.png" alt="logo">
+                <span>
+                    <img class="logo" src="./assets/images/logo.png" alt="logo">
+                </span>
             </a>
 
             <p>Somos especializados em Conservação, Proteção e Tratamento de superfícies automotivas.</p>
