@@ -1,3 +1,4 @@
+$("head").load('../../components/head.html');
 $("#header").load('../../components/header.html');
 $("#contact").load('../../components/contact.html');
 $("#footer").load('../../components/footer.html');
