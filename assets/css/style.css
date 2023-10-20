@@ -406,7 +406,7 @@ h4 {
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
-  background-image: url(../images/logo-office-bg-filter.jpeg);
+  background-image: url(../img/logo-office-bg-filter.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1055,7 +1055,7 @@ h4 {
     top: 0;
     height: 48vh; 
   }
-    
+  
   .top-home-content h1 { max-width: 45vh; }
   .top-home-content p { max-width: 53vh; }
 

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>Garagem 5.5 - Estética Automotiva</title>
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
@@ -13,60 +13,13 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <a href="#home" class="logo">
-                <img src="./assets/images/logo.png" alt="autofix home">
-            </a>
-
-            <nav id="navbar-desktop" class="navbar-desktop">
-                <ul class="navbar-list">
-                    <li>
-                    <a href="#home" class="navbar-link">Home</a>
-                    </li>
-                    
-                    <li>
-                    <a href="#service" class="navbar-link">Serviços</a>
-                    </li>
-                    
-                    <li>
-                    <a href="#about" class="navbar-link">Sobre</a>
-                    </li>
-                    
-                    <li>
-                    <a href="#galery" class="navbar-link">Galeria</a>
-                    </li>
-        
-                    <li>
-                    <a href="#contact" class="navbar-link">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <nav id="navbar-mobile" class="navbar-mobile">
-                <div class="hamburger-menu">
-                    <div class="hamburger-icon" onclick="toggleMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="menu-links">
-                        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-                        <li><a href="#service" onclick="toggleMenu()">Serviços</a></li>
-                        <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
-                        <li><a href="#galery" onclick="toggleMenu()">Galeria</a></li>
-                        <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
     <main>
         <section id="home" class="home">           
             <div class="bg-home">
                 <video autoplay loop muted>
-                    <source src="./assets/images/video-top-home.mp4" type="video/mp4">
+                    <source src="./assets/img/video-top-home.mp4" type="video/mp4">
                 </video>
             </div>
 
@@ -211,7 +164,7 @@
                 </a>
             </div>
 
-            <img src="./assets/images/about-photo.png">
+            <img src="./assets/img/about-photo.png">
         </section>
 
         <section id="galery" class="galery">
@@ -220,21 +173,21 @@
             
             <div class="galery-show">
                 <div class="galery-item">
-                    <img src="./assets/images/galery-moto-azul.jpeg">
-                    <img src="./assets/images/galery-moto-marrom.jpeg">
-                    <img src="./assets/images/galery-moto-azul.jpeg">
+                    <img src="./assets/img/galery-moto-azul.jpeg">
+                    <img src="./assets/img/galery-moto-marrom.jpeg">
+                    <img src="./assets/img/galery-moto-azul.jpeg">
                 </div>
 
                 <div class="galery-item">
-                    <img src="./assets/images/galery-moto-azul.jpeg">
-                    <img src="./assets/images/galery-moto-marrom.jpeg">
-                    <img src="./assets/images/galery-moto-azul.jpeg">
+                    <img src="./assets/img/galery-moto-azul.jpeg">
+                    <img src="./assets/img/galery-moto-marrom.jpeg">
+                    <img src="./assets/img/galery-moto-azul.jpeg">
                 </div>
 
                 <div class="galery-item">
-                    <img src="./assets/images/galery-moto-azul.jpeg">
-                    <img src="./assets/images/galery-moto-marrom.jpeg">
-                    <img src="./assets/images/galery-moto-azul.jpeg">
+                    <img src="./assets/img/galery-moto-azul.jpeg">
+                    <img src="./assets/img/galery-moto-marrom.jpeg">
+                    <img src="./assets/img/galery-moto-azul.jpeg">
                 </div>
             </div>
 
@@ -244,108 +197,13 @@
             </a>
         </section>
 
-        <section id="contact" class="contact">
-            <h2>Contato</h2>
-            <h3>Atendimento Rápido e Fácil</h3>
-            <h4>Tire suas dúvidas sobre qualquer procedimento que realizamos 
-            direto com as orientações de um dos nossos profissionais.</h4>
-            <p>Para sua melhor comodidade, nos informe o melhor horário para 
-            entrarmos em contato com você.</p>
-
-            <div class="contact-show">
-                <div class="contact-inputs">
-                    <input placeholder="Nome" type="text">
-                    <input placeholder="E-mail" type="email">
-                    <input placeholder="Telefone" type="tel">
-                    <input placeholder="Assunto" type="text">
-                    <textarea placeholder="Mensagem" type="textarea"></textarea>
-                    <a href="#contact" class="btn">
-                        <span>Enviar</span>
-                    </a>
-                </div>
-
-                <div class="contact-means">
-                    <div class="contact-means-item">
-                        <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                       <div>
-                            <a href="#contact">Telefone</a>
-                            <span>(11) 91234-5678</span>
-                        </div>
-                    </div>
-                    
-                    <span class="line-top"></span>
-                    <div class="contact-means-item">
-                        <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                       <div>
-                            <a href="#contact">WhatsApp</a>
-                            <span>(11) 91234-5678</span>
-                        </div>
-                    </div>
-                    
-                    <span class="line-top"></span>
-                    <div class="contact-means-item">
-                        <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                       <div>
-                            <a href="#contact">E-mail</a>
-                            <span>contato@garagem5-5.com.br</span>
-                        </div>
-                    </div>
-
-                    <span class="line-top"></span>
-                    <div class="contact-means-item">
-                        <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                       <div>
-                            <a href="#contact">Funcionamento</a>
-                            <span>De Seg. a Sex. de 8h às 17h30</span>
-                            <span>Sábados de 9h às 14h</span>
-                        </div>
-                    </div>
-                    
-                    <span class="line-top"></span>
-                    <div class="contact-means-item">
-                        <i class="fa-solid fa-circle-check fa-2xl" style="color: #b40b08;"></i>                       <div>
-                            <a href="#contact">Endereço</a>
-                            <span>N/A, São Paulo/SP</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="contact"></section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-top">
-            <a href="#home">
-                <span>
-                    <img class="logo" src="./assets/images/logo.png" alt="logo">
-                </span>
-            </a>
-
-            <p>Somos especializados em Conservação, Proteção e Tratamento de superfícies automotivas.</p>
-
-            <ul class="social-list">
-                <li>
-                    <a href="#" class="social-link">
-                        <i class="fa-brands fa-facebook fa-xl"></i>
-                    </a>
-                </li>
-    
-                <li>
-                    <a href="#" class="social-link">
-                        <i class="fa-brands fa-instagram fa-xl"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="social-link">
-                        <i class="fa-brands fa-youtube fa-xl"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-      
-        <div class="footer-bottom">
-            <p class="copyright">Copyright &copy; 2023 Garagem 5.5 - Todos os direitos reservados.</p>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <script src="https://kit.fontawesome.com/7aef6f92d8.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
