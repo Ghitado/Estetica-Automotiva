@@ -83,6 +83,12 @@ section {
   will-change: transform;
 }
 
+.btn-whatsapp {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+}
+
 h1 {
   font-size: var(--fs);
   font-weight: var(--fw-400);
@@ -114,6 +120,7 @@ h4 {
   left: 0;
   width: 100%;
   padding: 10px 100px;
+  z-index: 100;
   background-color: var(--bg-color-header);
 }
 
@@ -169,7 +176,7 @@ h4 {
   max-height: 0;
   overflow: hidden;
   transition: var(--transition);
-  z-index: 10w;
+  z-index: 10;
 }
 
 .menu-links li { list-style: none; }

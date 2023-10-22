@@ -24,7 +24,7 @@
 }
   
 .services-item {
-    width: 100%;
+  width: 100%;
   text-align: start;
   padding: 10px;
 }
@@ -34,13 +34,6 @@
   color: var(--black);
 }
 .services-item p { font-weight: var(--fw-700); }
-
-.btn-whatsapp {
-  display: flex;
-  justify-content: center; 
-  width: 100%;
-  z-index: 1;
-}
 
 .service .btn {
   background-color: var(--bg-color-whatsapp);
