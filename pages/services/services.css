@@ -1,0 +1,80 @@
+/*-----HOME-----*/
+
+.home { height: 500px; }
+
+
+/*-----TREATMENT-----*/
+
+.external-treatment { text-align: center; }
+.internal-treatment { 
+  background-color: var(--bg-color-section); 
+  text-align: center;
+}
+
+.treatment-show {
+  display: grid;
+  grid-template-rows: repeat(max-content, 480px);
+  row-gap: var(--fs-3);
+  margin-top: 40px;
+}
+
+.treatment-item {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  text-align: start;
+}
+
+.btn-whatsapp { justify-content: start; }
+.treatment-item .btn {
+  background-color: var(--bg-color-whatsapp);
+  color: var(--white);
+  margin-top: 25px;
+}
+
+.treatment-item img {
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+}
+
+.treatment-item h3 {
+  padding-top: 5px;
+  color: var(--bg-color);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-800);
+  width: 100%;
+  text-align: start;
+}
+
+.treatment-content { padding: 35px 20px 30px 50px; }
+.treatment-content p { 
+  margin-top: 11px;
+  text-align: start; 
+}
+
+.sub-title { 
+    font-size: var(--fs-7);
+    font-weight: var(--fw-800);
+}
+
+.text { 
+  font-size: var(--fs-7); 
+  font-weight: var(--fw-500);
+}
+
+.treatment-content ul { padding: 20px 0 0 40px;} 
+.treatment-content li { 
+  list-style: initial; 
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+}
+
+
+/*-----VIDEOS-----*/
+
+
+
+
+/*-----QUESTIONS-----*/
+
+.questions { background-color: var(--bg-color-section); }
