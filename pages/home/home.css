@@ -35,7 +35,6 @@
 }
 .services-item p { 
   font-weight: var(--fw-700); 
-  word-break: keep-all;
 }
 
 .service .btn {
@@ -297,7 +296,6 @@
   .services-item {
     display: grid;
     justify-items: center;
-    padding: 5px;
     row-gap: 15px;
   }
 
@@ -306,6 +304,8 @@
     font-weight: var(--fw-800);
     text-align: center;
   }
+
+  .break-word p { word-break: break-all; }
 
   .service-features { 
     grid-template-columns: repeat(1, 100%);
