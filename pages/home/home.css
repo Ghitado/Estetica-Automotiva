@@ -33,7 +33,10 @@
   text-decoration: none; 
   color: var(--black);
 }
-.services-item p { font-weight: var(--fw-700); }
+.services-item p { 
+  font-weight: var(--fw-700); 
+  word-break: keep-all;
+}
 
 .service .btn {
   background-color: var(--bg-color-whatsapp);
@@ -294,6 +297,7 @@
   .services-item {
     display: grid;
     justify-items: center;
+    padding: 5px;
     row-gap: 15px;
   }
 
