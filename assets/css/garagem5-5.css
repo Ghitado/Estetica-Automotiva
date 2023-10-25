@@ -56,6 +56,9 @@ html {
   font-family: var(--ff-mulish);
   font-size: 10px;
   scroll-behavior: smooth;
+  & img{
+    -webkit-user-drag: none;
+  }
 }
   
 body {
@@ -68,20 +71,20 @@ section {
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  max-width: max-content;
   background-color: var(--white);
   color: var(--bg-color);
-  max-width: max-content;
   font-weight: var(--fw-500);
   text-transform: uppercase;
   text-decoration: none;
-  display: flex;
-  align-items: center;
   gap: 8px;
   padding: 10px 28px;
   border: 1px solid transparent;
   border-radius: var(--radius-pill);
   transition: var(--transition);
-  will-change: transform;
+  z-index: 1;
 }
 
 .btn-whatsapp {
@@ -176,7 +179,7 @@ h4 {
   max-height: 0;
   overflow: hidden;
   transition: var(--transition);
-  z-index: 10;
+  z-index: 100;
 }
 
 .menu-links li { list-style: none; }
@@ -516,7 +519,10 @@ h4 {
 
   #navbar-desktop { display: none; }
 
-  #navbar-mobile { display: flex; }
+  #navbar-mobile { 
+    display: flex; 
+    z-index: 100;
+  }
     
 
   /*---HOME---*/
