@@ -107,19 +107,11 @@
   margin-top: 58px;
 }
 
-.videos-content div { 
+.videos-item { 
   width: 70%;
   height: 440px;
   justify-self: center;
 }
-
-.videos-content video { 
-  width: 100%; 
-  height: max-content;
-  justify-self: center;
-  border-radius: 5px;
-}
-
 
 /*-----QUESTIONS-----*/
 
@@ -260,11 +252,7 @@
     row-gap: 20px;
   }
 
-  .videos-content div { 
-    width: 80%;
-    height: 35vw; 
-    justify-self: center;
-  }
+  .videos-item { width: 700px; }
 }
 
 
@@ -288,7 +276,11 @@
 
   /*-----VIDEOS-----*/
 
-  .videos-content div { height: 42vw; }
+  .videos-item { 
+    width: 85vw;
+    height: 50vw;
+    justify-self: center;
+  }
 }
 
 
@@ -325,9 +317,10 @@
 
   /*-----VIDEOS-----*/
 
-  .videos-content div { 
+  .videos-item { 
     width: 100%;
-    height: 45vw; 
+    height: 50vw;
+    min-height: 200px;
     justify-self: center;
   }
 }
