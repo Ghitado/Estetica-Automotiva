@@ -75,6 +75,7 @@
   font-size: var(--fs-3);
 }
 .service-features-badge .fix-circle-icon-tall { padding: 1rem 1.85rem; }
+.service-features-badge .fix-circle-icon-wide { padding: 1.2rem 1.2rem; }
 
 .service-features-text { padding: 20px 5px 22px 0; }
 .service-features-item h3 { 
