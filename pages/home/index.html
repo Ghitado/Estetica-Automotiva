@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/garagem5-5.css">
+    <link rel="stylesheet" href="/pages/home/simple-lightbox.css">
     <link rel="stylesheet" href="/pages/home/home.css">
 </head>
 
@@ -206,36 +207,36 @@
             <img src="../../assets/img/about-photo.png">
         </section>
 
-        <section id="galery" class="galery">
+        <section id="gallery" class="gallery">
             <h2>Galeria</h2>
             <p>Veja os Veículos tratados pela Garagem 5.5 Estética Automotiva</p>
             
-            <div class="galery-show">
-                <a href="../../assets/img/galery-moto-azul.jpeg">
-                    <img src="../../assets/img/galery-moto-azul.jpeg">
+            <div class="gallery-show">
+                <a href="../../assets/img/gallery-moto-azul.jpeg">
+                    <img src="../../assets/img/gallery-moto-azul.jpeg" alt="" title="">
                 </a>
-                <a href="../../assets/img/galery-moto-azul.jpeg">
-                    <img src="../../assets/img/galery-moto-azul.jpeg">
+                <a href="../../assets/img/gallery-moto-azul.jpeg">
+                    <img src="../../assets/img/gallery-moto-azul.jpeg" alt="" title="">
                 </a>
-                <a href="../../assets/img/galery-moto-azul.jpeg">
-                    <img src="../../assets/img/galery-moto-azul.jpeg">
+                <a href="../../assets/img/gallery-moto-azul.jpeg">
+                    <img src="../../assets/img/gallery-moto-azul.jpeg" alt="" title="">
                 </a>
-                <a href="../../assets/img/galery-moto-azul.jpeg">
-                    <img src="../../assets/img/galery-moto-azul.jpeg">
+                <a href="../../assets/img/gallery-moto-azul.jpeg">
+                    <img src="../../assets/img/gallery-moto-azul.jpeg" alt="" title="">
                 </a>
-                <a href="../../assets/img/galery-moto-marrom.jpeg">
-                    <img src="../../assets/img/galery-moto-marrom.jpeg">
+                <a href="../../assets/img/gallery-moto-marrom.jpeg">
+                    <img src="../../assets/img/gallery-moto-marrom.jpeg" alt="" title="">
                 </a>
-                <a href="../../assets/img/galery-moto-marrom.jpeg">
-                    <img src="../../assets/img/galery-moto-marrom.jpeg">
+                <a href="../../assets/img/gallery-moto-marrom.jpeg">
+                    <img src="../../assets/img/gallery-moto-marrom.jpeg" alt="" title="">
                 </a>
-                <a href="../../assets/img/galery-moto-marrom.jpeg">
-                    <img src="../../assets/img/galery-moto-marrom.jpeg">
+                <a href="../../assets/img/gallery-moto-marrom.jpeg">
+                    <img src="../../assets/img/gallery-moto-marrom.jpeg" alt="" title="">
                 </a>
-                <a href="../../assets/img/galery-moto-marrom.jpeg">
-                    <img src="../../assets/img/galery-moto-marrom.jpeg">
+                <a href="../../assets/img/gallery-moto-marrom.jpeg">
+                    <img src="../../assets/img/gallery-moto-marrom.jpeg" alt="" title="">
                 </a>
-
+                <div class="clear"></div>
             </div>
 
             <a href="../../pages/services" class="btn">
@@ -252,5 +253,19 @@
     <script src="https://kit.fontawesome.com/7aef6f92d8.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="../../assets/js/main.js"></script>
+    <script src="/pages/home/simple-lightbox.js?v2.14.0"></script>
+    <script>
+        (function() {
+            var $gallery = new SimpleLightbox('.gallery-show a', {
+                nav:true,
+                overlay:true,
+                closeText:'X',
+                swipeClose:true,
+                uniqueImages:false,
+                doubleTapZoom: 2,
+                maxZoom: 2
+            });
+        })();
+    </script>
 </body>
 </html>
