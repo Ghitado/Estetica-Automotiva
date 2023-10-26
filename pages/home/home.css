@@ -121,7 +121,9 @@
 }
 
 .about img {
-  width: 100%;
+  justify-self: center;
+  width: 60%;
+  border-radius: 30px;
 }
  
   
@@ -133,8 +135,10 @@
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
-  background-image: url(../../assets/img/logo-office-bg-filter.jpeg);
+  background-image: url(../../assets/img/bg-section-gallery.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   background-size: cover;
 }
   
@@ -149,7 +153,9 @@
 .gallery-show .clear { clear: both; }
 .gallery-show {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(10vw, 18vw));
+  grid-template-columns: repeat(auto-fit, minmax(min-height, 18vw));
   grid-gap: var(--fs-8);
   padding: 65px 0;
   width: 100%;
@@ -157,7 +163,10 @@
 
 .gallery-show img { 
   width: 100%; 
+  border-radius: 10px;
+  border: 1px solid white;
 }
+
 
 .gallery a {
   background-color: var(--bg-color);
@@ -165,6 +174,8 @@
   box-shadow: var(--shadow);
   filter: brightness(80%);
 }
+
+.gallery-show a { background-color: transparent; }
 
   
 /*  MEDIA QUERIES  */
@@ -214,7 +225,15 @@
   .about-text p { font-size: var(--fs-6); }
   .about-text a { margin-top: 10px; }
   
-  .about img { width: 55%; }
+  .about img { width: 350px; }
+
+
+  /*---GALLERY---*/
+
+  .gallery-show {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
 
@@ -283,8 +302,6 @@
   .about-text h3 { padding: 14px 0 30px 0; }
   .about-text p { font-size: var(--fs-6); }
   .about-text a { margin-top: 10px; }
-  
-  .about img { width: 55%; }
 }
 
 
@@ -355,7 +372,15 @@
   .about-text h3 { padding: 14px 0 30px 0; }
   .about-text p { font-size: var(--fs-7); }
   .about-text a { margin-top: 10px; }
-  .about img { width: 65%; }
+  .about img { width: 300px; }
+
+
+  /*---GALLERY---*/
+
+  .gallery-show {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 25vw));
+  }
 }
 
 
@@ -364,7 +389,7 @@
 
   /*---ABOUT---*/
 
-  .about img { width: 70vw; }
+  .about img { width: 50vw; }
 }
 
 
