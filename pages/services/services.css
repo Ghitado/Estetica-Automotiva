@@ -140,7 +140,6 @@
   position: relative;
   font-weight: var(--fw-800);
   text-decoration: none;
-  margin: 1.4rem 2rem;
   transition: all 0.1s linear;
 }
 
@@ -148,13 +147,14 @@
   align-self: center;
   width: 15px;
   height: 3px;
+  margin-left: 15px;
   background-color: var(--black);
   border-radius: 100px;
   transition: var(--transition);
 }
 
-.question-title p { margin-left: 10px; }
-.question-title span:nth-child(2) { padding-right: 15px;}
+.question-title p { padding: 1.4rem 15px; }
+.question-title span:nth-child(2) { padding-right: 15px; }
 .question-title span:first-child { 
   position: absolute;
   transform: rotate(90deg);

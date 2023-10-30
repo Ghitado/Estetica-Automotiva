@@ -247,9 +247,11 @@ h4 {
 }
 
 .open {
-  border: 1px solid var(--bg-color);
   max-height: max-content;
+  border: 1px solid var(--bg-color);
 }
+
+.hamburger-icon { border: none;}
 
 .hamburger-menu {
   background-color: var(--bg-color-navbar);
